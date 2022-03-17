@@ -30,7 +30,7 @@ function EmptORSpaces(str){
 exports.initialize = function(){
     return new Promise(function(resolve, reject){
    
-        let db = mongoose.createConnection("mongodb+srv://mkot-kawula:ripostahero12@senecaweb.hxxux.mongodb.net/web322_week8?retryWrites=true&w=majority", { useNewUrlParser: true }); //connect to database
+        let db = mongoose.createConnection("mongodb+srv://mkot-kawula:@senecaweb.hxxux.mongodb.net/web322_week8?retryWrites=true&w=majority", { useNewUrlParser: true }); //connect to database
         
         db.on('error', function(err){ 
             reject("db error! " + err);
